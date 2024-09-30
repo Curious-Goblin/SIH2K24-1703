@@ -10,16 +10,16 @@ function getInitials(name: string) {
 }
 
 function getRandomBlueColor() {
-    const r = Math.floor(Math.random() * (50 - 10) + 10);  
-    const g = Math.floor(Math.random() * (180 - 150) + 150); 
-    const b = Math.floor(Math.random() * (210 - 180) + 180); 
+    const r = Math.floor(Math.random() * (50 - 10) + 10);
+    const g = Math.floor(Math.random() * (180 - 150) + 150);
+    const b = Math.floor(Math.random() * (210 - 180) + 180);
     return `rgb(${r}, ${g}, ${b})`;
 }
 
 
 export default async function Profile() {
     const session = await getServerSession(authOptions);
-    const { name } = session?.user;
+    const { name } = session?.user || { name: "Dummy User" };
     const nameparts = name.split(" ");
     const initials = getInitials(name);
     const backgroundColor = getRandomBlueColor();
