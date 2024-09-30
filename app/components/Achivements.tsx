@@ -27,10 +27,10 @@ export default function AchievmentComponent() {
     return (
         <div className="mt-8">
             <div className="flex justify-between items-center">
-                <div className="font-bold text-[#654B3E] text-xl ">
+                <div className="font-bold text-[#1aa5c4] text-xl ">
                     Achievments
                 </div>
-                <div onClick={handleNavigation} className="font-light cursor-pointer text-[#654B3E]">
+                <div onClick={handleNavigation} className="font-light cursor-pointer text-[#1aa5c4]">
                     View all
                 </div>
             </div>

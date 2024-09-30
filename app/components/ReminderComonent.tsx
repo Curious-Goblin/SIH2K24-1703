@@ -30,7 +30,7 @@ export default function ReminderComponent() {
     }
     return (
         <div className="mt-8">
-            <div className="font-bold text-[#654B3E] text-xl mb-10">
+            <div className="font-bold text-[#1aa5c4] text-xl mb-10">
                 Reminders
             </div>
             <div>

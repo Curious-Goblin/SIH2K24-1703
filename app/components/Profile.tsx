@@ -9,19 +9,20 @@ function getInitials(name: string) {
     return name[0];
 }
 
-function getRandomBrownColor() {
-    const r = Math.floor(Math.random() * (200 - 130) + 130);
-    const g = Math.floor(Math.random() * (110 - 70) + 70);
-    const b = Math.floor(Math.random() * (50 - 30) + 30);
+function getRandomBlueColor() {
+    const r = Math.floor(Math.random() * (50 - 10) + 10);  
+    const g = Math.floor(Math.random() * (180 - 150) + 150); 
+    const b = Math.floor(Math.random() * (210 - 180) + 180); 
     return `rgb(${r}, ${g}, ${b})`;
 }
+
 
 export default async function Profile() {
     const session = await getServerSession(authOptions);
     const { name } = session?.user;
     const nameparts = name.split(" ");
     const initials = getInitials(name);
-    const backgroundColor = getRandomBrownColor();
+    const backgroundColor = getRandomBlueColor();
 
     return (
         <div className="flex items-center space-x-4">

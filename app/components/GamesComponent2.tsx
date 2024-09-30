@@ -119,7 +119,7 @@ export default function GamesComponent2() {
                                 <LockSvg />
                             </div>
                         )}
-                        <div className="absolute top-3 left-3 flex items-center bg-white text-[#654B3E] text-sm font-bold px-2 py-1 rounded-md">
+                        <div className="absolute top-3 left-3 flex items-center bg-white text-[#1aa5c4] text-sm font-bold px-2 py-1 rounded-md">
                             <span>{item.likes}</span>
                             <div className="flex items-center justify-center mt-2 w-5 h-5">
                                 <HeartSvg />

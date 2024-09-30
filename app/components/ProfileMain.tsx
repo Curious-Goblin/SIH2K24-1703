@@ -12,10 +12,10 @@ function getInitials(name: string) {
     return name[0];
 }
 
-function getRandomBrownColor() {
-    const r = Math.floor(Math.random() * (200 - 130) + 130);
-    const g = Math.floor(Math.random() * (110 - 70) + 70);
-    const b = Math.floor(Math.random() * (50 - 30) + 30);
+function getRandomBlueColor() {
+    const r = Math.floor(Math.random() * (50 - 10) + 10);  
+    const g = Math.floor(Math.random() * (180 - 150) + 150); 
+    const b = Math.floor(Math.random() * (210 - 180) + 180); 
     return `rgb(${r}, ${g}, ${b})`;
 }
 
@@ -24,7 +24,7 @@ export default async function ProfileMain() {
     const { name } = session?.user;
     const nameparts = name.split(" ");
     const initials = getInitials(name);
-    const backgroundColor = getRandomBrownColor();
+    const backgroundColor = getRandomBlueColor();
 
     return (
         <div className="flex items-center">
@@ -37,13 +37,13 @@ export default async function ProfileMain() {
 
             <div className="ml-10 flex-1">
                 <div className="flex flex-col mb-7">
-                    <div className="text-2xl text-[#654B3E] font-extrabold">
+                    <div className="text-2xl text-[#1aa5c4] font-extrabold">
                         {nameparts[0]}
                     </div>
                     <div className="text-sm text-[#696F79] font-medium">Bonus booster 24lv</div>
                 </div>
                 <div className="max-w-96 bg-gray-300 rounded-full h-2.5 mb-10">
-                    <div className="bg-[#654B3E] h-2.5 rounded-full" style={{ width: "60%" }}></div>
+                    <div className="bg-[#1aa5c4] h-2.5 rounded-full" style={{ width: "60%" }}></div>
                 </div>
                 <div className="flex space-x-8 text-[#696F79]">
                     <div className="flex gap-4">

@@ -70,8 +70,8 @@ export default function SignInComponent() {
 
     return (
         <div className="w-full">
-            <div className="text-3xl font-bold text-[#654B3E]">Login to your Account</div>
-            <div className="text-2xl font-extralight text-[#654B3E]">
+            <div className="text-3xl font-bold text-[#1aa5c4]">Login to your Account</div>
+            <div className="text-2xl font-extralight text-[#1aa5c4]">
                 with your registered Email Address
             </div>
             <div className="flex flex-col justify-center items-center pt-10 pb-4 w-full">
@@ -96,14 +96,14 @@ export default function SignInComponent() {
 
             {authError && <p className="text-red-500 text-sm pb-4">{authError}</p>}
 
-            <Button style="rounded-md bg-[#654B3E] text-white font-medium flex justify-center py-3" onClick={handleSubmit} name="Login" />
+            <Button style="rounded-md bg-[#1aa5c4] text-white font-medium flex justify-center py-3" onClick={handleSubmit} name="Login" />
             <div className="flex items-center pt-5 pb-5">
                 <div className="flex-grow border-t border-gray-300" />
                 <span className="px-4 text-gray-400 text-sm">Or</span>
                 <div className="flex-grow border-t border-gray-300" />
             </div>
             <GoogleButton onClick={handleGoogleSignIn} text="Login with Google" />
-            <div onClick={handleNavigation} className="text-md underline cursor-pointer text-[#654B3E] font-semibold flex justify-center pt-8">
+            <div onClick={handleNavigation} className="text-md underline cursor-pointer text-[#1aa5c4] font-semibold flex justify-center pt-8">
                 Don't have an account? Signup
             </div>
         </div>

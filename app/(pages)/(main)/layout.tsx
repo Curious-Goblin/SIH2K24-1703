@@ -4,17 +4,18 @@ import Button from "@/app/components/button";
 import Profile from "@/app/components/Profile";
 import LeftBar from "@/app/components/LeftBar";
 import RightBar from "@/app/components/RightBar";
+import LogoSvg from "@/app/svg/logoSvg";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     return (
         <div className="w-screen h-screen flex flex-col">
             <div className="flex items-center gap-6 w-full pl-6 pt-3">
                 <div className="w-60 h-20">
-                    <LogoSvgDashboard />
+                    <LogoSvg />
                 </div>
                 <SearchBarComponent />
                 <Button
-                    style="rounded-lg bg-[#654B3E] text-white font-bold flex justify-center my-3 py-4 px-10"
+                    style="rounded-lg bg-[#1aa5c4] text-white font-bold flex justify-center my-3 py-4 px-10"
                     name="Let's Learn"
                 />
                 <Profile />

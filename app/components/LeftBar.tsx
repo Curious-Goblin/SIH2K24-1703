@@ -16,7 +16,7 @@ export default function LeftBar(){
     return (
         <div className="flex flex-col justify-between pb-20" style={{ width: '12%' }}>
         <div>
-          <div onClick={handleNavigationD} className="rounded-lg bg-[#654B3E] text-white text-lg font-bold flex justify-around my-3 py-4 px-9">
+          <div onClick={handleNavigationD} className="rounded-lg bg-[#1aa5c4] text-white text-lg font-bold flex justify-around my-3 py-4 px-9">
             <DashboardSvg />
             <button>Dashboard</button>
           </div>
@@ -24,7 +24,7 @@ export default function LeftBar(){
         </div>
         <div className="pb-10">
           <Image
-            src="/Support.png"
+            src="/Support1.png"
             layout="responsive"
             onClick={handleNavigation}
             width={271}

@@ -67,7 +67,7 @@ export default function Game() {
 
     return (
         <div>
-            <div className="font-bold text-xl text-[#654B3E]">
+            <div className="font-bold text-xl text-[#1aa5c4]">
                 Game Tutorial
             </div>
 

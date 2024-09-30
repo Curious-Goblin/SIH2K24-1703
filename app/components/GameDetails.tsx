@@ -90,7 +90,7 @@ export default function GameDetails() {
                     onClick={gameName === "The Constitutional Hangman" ? handleStartGameClick : undefined}
                 >
                     <Button
-                        style="font-extrabold bg-[#654B3E] px-12 py-4 rounded-md text-white"
+                        style="font-extrabold bg-[#1aa5c4] px-12 py-4 rounded-md text-white"
                         name="Start Game"
                     />
                 </div>

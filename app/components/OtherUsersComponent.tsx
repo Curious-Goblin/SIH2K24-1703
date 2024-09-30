@@ -18,7 +18,7 @@ export default function OtherUsers() {
     }
     return (
         <div className="">
-            <div className="text-[#654B3E] text-lg font-bold mb-4">
+            <div className="text-[#1aa5c4] text-lg font-bold mb-4">
                 Other Users Online
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -37,7 +37,7 @@ export default function OtherUsers() {
                 <Button
                     onClick={handleNavigation}
                     name="Combat"
-                    style="border-2 border-red-900 inline-flex justify-center text-xl mt-7 py-3 px-12 font-medium text-[#654B3E] rounded-md"
+                    style="border-2 border-[#1aa5c4] inline-flex justify-center text-xl mt-7 py-3 px-12 font-medium text-[#1aa5c4] rounded-md"
                 />
             </div>
         </div>
