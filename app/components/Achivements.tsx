@@ -27,10 +27,10 @@ export default function AchievmentComponent() {
     return (
         <div className="mt-8">
             <div className="flex justify-between items-center">
-                <div className="font-bold text-[#1aa5c4] text-xl ">
+                <div className="font-bold text-[#1AA5C4] text-md md:text-lg lg:text-xl ">
                     Achievments
                 </div>
-                <div onClick={handleNavigation} className="font-light cursor-pointer text-[#1aa5c4]">
+                <div onClick={handleNavigation} className="hidden 2xl:block font-light cursor-pointer text-[#1AA5C4]">
                     View all
                 </div>
             </div>
@@ -41,11 +41,13 @@ export default function AchievmentComponent() {
                         onClick={handleNavigation}
                         className="flex flex-col cursor-pointer gap-6 pt-8"
                     >
-                        <div className="w-20 h-20">
+                        <div className="w-8 h-8 md:w-12 md:h-12 lg:w-12 lg:h-12 xl:w-16 xl:h-16">
                             {achievment.svg}
                         </div>
-                        <div className="flex justify-center font-light text-[#696F79]">
-                            {achievment.name}
+                        <div className="hidden 2xl:block">
+                            <div className="w-full flex justify-center font-light texl-xs text-[#696F79]">
+                                {achievment.name}
+                            </div>
                         </div>
                     </div>
                 ))}

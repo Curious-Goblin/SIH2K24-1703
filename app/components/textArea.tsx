@@ -8,7 +8,7 @@ export default function TextArea({ placeholder, type, label, onChange }: { place
                 placeholder={placeholder}
                 type={type}
                 onChange={onChange}
-                className="shadow-md py-4 px-2 outline-none rounded-md w-full placeholder-[#1aa5c4] text-xs"
+                className="shadow-md py-4 px-2 outline-none rounded-md w-full placeholder-[#1AA5C4] text-xs"
             />
         </div>
     )

@@ -1,39 +1,45 @@
-"use client"
+"use client";
 import Image from "next/image";
 import DashboardSvg from "../svg/DashbordSvg";
 import SideBar from "./SideBar";
 import LogoutButton from "./LogOutComonent";
 import { useRouter } from "next/navigation";
 
-export default function LeftBar(){
-    const router = useRouter(); 
+export default function LeftBar() {
+    const router = useRouter();
+    
     const handleNavigation = () => {
-        router.push("/err");  
+        router.push("/err");
     };
     const handleNavigationD = () => {
-        router.push("/dashboard");  
+        router.push("/dashboard");
     };
+
     return (
-        <div className="flex flex-col justify-between pb-20" style={{ width: '12%' }}>
-        <div>
-          <div onClick={handleNavigationD} className="rounded-lg bg-[#1aa5c4] text-white text-lg font-bold flex justify-around my-3 py-4 px-9">
-            <DashboardSvg />
-            <button>Dashboard</button>
-          </div>
-          <SideBar />
+        <div className="flex flex-col justify-between md:w-[13.5%]">
+            <div>
+                <div 
+                    onClick={handleNavigationD} 
+                    className="rounded-lg bg-[#1AA5C4] mx-4 text-white text-lg font-bold flex justify-around mt-3 py-4 px-4 cursor-pointer"
+                >
+                    <DashboardSvg />
+                    <button className="hidden lg:block">Dashboard</button>
+                </div>
+                <SideBar />
+            </div>
+
+            <div className="mb-4">
+                <Image
+                    src="/Support.png"
+                    layout="responsive"
+                    onClick={handleNavigation}
+                    width={271}
+                    height={300}
+                    alt="Background"
+                    className="object-cover cursor-pointer p-5"
+                />
+                <LogoutButton />
+            </div>
         </div>
-        <div className="pb-10">
-          <Image
-            src="/Support1.png"
-            layout="responsive"
-            onClick={handleNavigation}
-            width={271}
-            height={300}
-            alt="Background"
-            className="object-cover pb-10 cursor-pointer"
-          />
-          <LogoutButton />
-        </div>
-      </div>
-    )
+    );
 }

@@ -10,9 +10,9 @@ function getInitials(name: string) {
 }
 
 function getRandomBlueColor() {
-    const r = Math.floor(Math.random() * (50 - 10) + 10);
-    const g = Math.floor(Math.random() * (180 - 150) + 150);
-    const b = Math.floor(Math.random() * (210 - 180) + 180);
+    const r = Math.floor(Math.random() * (100 - 0) + 0);  
+    const g = Math.floor(Math.random() * (150 - 50) + 50); 
+    const b = Math.floor(Math.random() * (255 - 180) + 180);
     return `rgb(${r}, ${g}, ${b})`;
 }
 
@@ -25,14 +25,14 @@ export default async function Profile() {
     const backgroundColor = getRandomBlueColor();
 
     return (
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-2 md:space-x-4">
             <div
-                className="flex items-center justify-center rounded-full w-12 h-12 text-white text-xl font-bold"
+                className="flex items-center justify-center rounded-full w-8 h-8 md:w-12 md:h-12 text-white text-sm md:text-xl font-bold"
                 style={{ backgroundColor }}
             >
                 {initials.toLocaleUpperCase()}
             </div>
-            <div className="text-lg font-semibold">
+            <div className="text-sm md:text-lg font-semibold">
                 {nameparts[0].toLocaleUpperCase()}
             </div>
         </div>
